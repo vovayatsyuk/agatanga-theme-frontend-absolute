@@ -47,6 +47,21 @@ body {
         }
     }
 }
+//
+// Heade Search
+// _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .header .block-search {
+        position: absolute;
+        right: 15px;
+        bottom: -45px;
+        #search {
+            border-radius: 10px;
+            border-width: 0px;
+        }
+    }
+}
 
 //
 //  Navigation
@@ -126,10 +141,74 @@ body {
     }
 }
 
+//
+// Footer
+// _____________________________________________
+
 .page-footer {
     background: #0f769d; /* Old browsers */
     background: linear-gradient(to bottom,  #0f769d 0%,#00628e 23%,#00628e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f769d', endColorstr='#00628e',GradientType=0 ); /* IE6-9 */
+    .informational {
+        clear: both;
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        > ul {
+            width: 80%;
+            margin: 0 auto;
+            > li {
+                h4 {
+                    color: @footer-link_color;
+                }
+                ul {
+                    padding-right: 0;
+                    li {
+                        margin-bottom: 4px;
+                        a {
+                            color: @footer-link_color;
+                            font-size: @font-size__s;
+                        }
+                    }
+                }
+                float: left;
+                width: 20%;
+                padding-left: 5%;
+            }
+        }
+    }
+    .footer-additional {
+        float: left;
+        width: 100%;
+        border-top: 1px solid #136793;
+        border-bottom: 1px solid #136793;
+    }
+    .footer-contacts {
+        float: left;
+        color: @color-white;
+        font-size: @font-size__xs;
+        .widget {
+            margin: 10px 0;
+        }
+    }
+}
+.copyright {
+    clear: both;
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .page-footer {
+        .footer {
+            .informational {
+                > ul {
+                    width: 100% ;
+                    > li {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 //
