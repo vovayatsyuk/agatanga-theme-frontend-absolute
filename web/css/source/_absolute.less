@@ -30,6 +30,20 @@ body {
             true
         );
     }
+    .links {
+        float: right;
+        li {
+            float: left;
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        li.welcome {
+            margin-right: 50px;
+            span {
+                color: @color-gray55;
+            }
+        }
+    }
 }
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .header {
@@ -168,7 +182,13 @@ body {
                         a {
                             color: @footer-link_color;
                             font-size: @font-size__s;
+                            padding-left: 5px;
                         }
+                    }
+                    li::before {
+                        content: "▶";
+                        color: @footer-link_color;
+                        font-size: @font-size__xs;
                     }
                 }
                 float: left;

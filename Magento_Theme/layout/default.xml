@@ -1,10 +1,29 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+        <referenceContainer name="header.links">
+             <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">My Cart</argument>
+                    <argument name="path" xsi:type="string">checkout/cart</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-link1">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Checkout</argument>
+                    <argument name="path" xsi:type="string">checkout</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="my-link2">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">My Wishlist</argument>
+                    <argument name="path" xsi:type="string">wishlist</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
         <referenceContainer name="footer">
             <referenceBlock name="form.subscribe" remove="true"/>
             <referenceBlock name="footer_links" remove="true"/>
-
             <block class="Magento\Cms\Block\Block" name="footer_links_block">
                 <arguments>
                     <argument name="block_id" xsi:type="string">footer_links_block</argument>
@@ -16,5 +35,9 @@
                 </arguments>
             </block>
         </referenceContainer>
+        <move element="header.links" destination="header-wrapper" />
+        <move element="minicart" destination="header.panel" after="store_language" />
     </body>
 </page>
+
+
