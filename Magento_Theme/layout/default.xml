@@ -22,7 +22,7 @@
             </block>
         </referenceContainer>
         <referenceContainer name="footer">
-            <referenceBlock name="form.subscribe" remove="true"/>
+            <!-- <referenceBlock name="form.subscribe" remove="true"/> -->
             <referenceBlock name="footer_links" remove="true"/>
             <block class="Magento\Cms\Block\Block" name="footer_links_block">
                 <arguments>
@@ -34,6 +34,9 @@
                     <argument name="block_id" xsi:type="string">footer_additional</argument>
                 </arguments>
             </block>
+        </referenceContainer>
+        <referenceContainer name="sidebar.additional">
+            <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="subscribe_right.phtml"/>
         </referenceContainer>
         <move element="header.links" destination="header-wrapper" />
         <move element="minicart" destination="header.panel" after="store_language" />

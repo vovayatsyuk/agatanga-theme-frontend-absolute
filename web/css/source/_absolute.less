@@ -169,14 +169,36 @@ body {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
         }
     }
-    .sidebar .block {
-        padding: 10px;
-        border: 1px solid @color-gray-darken0;
-        border-radius: 6px;
-        background: #fdfdfd; /* Old browsers */
-        background: linear-gradient(to bottom,  #fdfdfd 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    .sidebar {
+        .block {
+            padding: 10px;
+            border: 1px solid @color-gray-darken0;
+            border-radius: 6px;
+            background: #fdfdfd; /* Old browsers */
+            background: linear-gradient(to bottom,  #fdfdfd 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+        }
+        .block.newsletter {
+            width: auto;
+            border: 0px solid transparent;
+
+            background: #6194ae; /* Old browsers */
+            background: linear-gradient(to bottom,  #6194ae 0%,#005e89 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6194ae', endColorstr='#005e89',GradientType=0 ); /* IE6-9 */
+
+            .title {
+                display: block;
+                color: @color-white;
+            }
+            .newsletter-subtitle{
+                color: @color-white;
+            }
+            .actions .primary {
+                padding: 8px 15px;
+            }
+        }
     }
+
 }
 
 //
@@ -237,6 +259,9 @@ body {
     }
     .footer-payments {
         float: right;
+        .widget {
+            margin-bottom: 0;
+        }
         li {
             float: left;
             img {
