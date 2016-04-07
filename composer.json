@@ -6,7 +6,8 @@
     "license": "OSL-3.0",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0",
-        "swissup/slick-carousel": "*"
+        "swissup/slick-carousel": "*",
+        "swissup/font-awesome": "*"
     },
     "autoload": {
         "files": [ "registration.php" ]
