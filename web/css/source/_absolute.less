@@ -12,7 +12,7 @@ body {
 }
 .logo {
     max-height: 50px;
-    max-width: 50px;
+    maxwidth: 50px;
 }
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-wrapper {
@@ -43,8 +43,8 @@ body {
         float: right;
         margin-top: 7px;
         li {
-            float: left;
-            list-style-type: none;
+            float: left
+;            list-style-type: none;
             margin-left: 20px;
         }
         li.welcome {
@@ -235,6 +235,15 @@ body {
             margin: 10px 0;
         }
     }
+    .footer-payments {
+        li {
+            float: left;
+            img {
+                display: block;
+                height: 20px;
+            }
+        }
+    }
 }
 .copyright {
     clear: both;
@@ -267,6 +276,11 @@ body {
     .tocart {
         border-radius: @button__border-radius;
     }
+    .price-box{
+        span.price {
+            color: @color-gray40;
+        }
+    }
 }
 
 //
@@ -276,3 +290,5 @@ body {
 .homepage-slider {
     padding: 0 25px 25px;
 }
+
+// #narrow-by-list div::last
