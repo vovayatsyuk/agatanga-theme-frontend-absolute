@@ -21,6 +21,19 @@
                 </arguments>
             </block>
         </referenceContainer>
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Cms\Block\Block" name="slogan" after="logo">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">slogan</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_img_width" xsi:type="number">224</argument>
+                <argument name="logo_img_height" xsi:type="number">50</argument>
+            </arguments>
+        </referenceBlock>
         <referenceContainer name="footer">
             <!-- <referenceBlock name="form.subscribe" remove="true"/> -->
             <referenceBlock name="footer_links" remove="true"/>
