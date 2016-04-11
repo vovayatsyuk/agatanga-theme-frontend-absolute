@@ -53,7 +53,6 @@
         </referenceContainer>
         <move element="header.links" destination="header-wrapper" />
         <move element="minicart" destination="header.panel" after="store_language" />
+        <move element="store_switcher" destination="footer" after="-" />
     </body>
 </page>
-
-
