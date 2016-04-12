@@ -75,10 +75,21 @@ body {
     header.page-header {
         border-bottom: 0px solid transparent;
         margin-bottom: 0;
+        .panel {
+            &.header {
+                padding: 0;
+            }
+        }
+    }
+    .page-header{
+        .header {
+            &.content {
+                border-radius: 0px;
+            }
+        }
     }
     .header {
         &.content {
-            border-radius: 10px 10px 0 0;
             .slogan {
                 display: none;
             }
@@ -87,7 +98,6 @@ body {
             display: none;
         }
     }
-
 }
 
 .page-header {
@@ -255,6 +265,13 @@ body {
     }
 
 }
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .home-callouts  { display: none; }
+    div.page-bottom,
+    main.page-main { border-radius: 0 0 0px 0px; }
+}
+
 
 //
 // Featured
