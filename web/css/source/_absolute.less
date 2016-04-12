@@ -57,6 +57,12 @@ body {
     .block-minicart {
         color: @color-gray20;
     }
+    .minicart-wrapper .action.showcart:before {
+        color: @color-white;
+    }
+    .minicart-wrapper .action.showcart:hover:before {
+        color: @color-gray-darken0;
+    }
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     header.page-header {
