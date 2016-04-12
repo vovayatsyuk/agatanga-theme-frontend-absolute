@@ -269,11 +269,22 @@ body {
 }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-    .home-callouts  { display: none; }
+    .home-callouts  {
+        display: none;
+    }
     div.page-bottom,
     main.page-main { border-radius: 0 0 0px 0px; }
 }
-
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .home-callouts  {
+        .callout {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            min-height: auto !important;
+        }
+    }
+}
 
 //
 // Featured
