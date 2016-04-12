@@ -298,6 +298,12 @@ body {
 
 }
 
+//
+// Page Bottom (before footer)
+//
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-wrapper > .page-bottom { width: 100%; }
+}
 
 //
 // Footer
