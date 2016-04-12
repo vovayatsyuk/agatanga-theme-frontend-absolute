@@ -52,13 +52,6 @@
             <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" after="homepage_callout" template="subscribe_right.phtml"/>
             <block class="Magento\Reports\Block\Product\Viewed" name="recently.viewed" as="recently_viewed" template="widget/viewed/column/viewed_names_list.phtml"/>
         </referenceContainer>
-        <referenceContainer name="page.bottom">
-            <block class="Magento\Cms\Block\Block" name="featured">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">featured</argument>
-                </arguments>
-            </block>
-        </referenceContainer>
         <move element="header.links" destination="header-wrapper" />
         <move element="minicart" destination="header.panel" after="store_language" />
         <move element="store_switcher" destination="footer" after="-" />
