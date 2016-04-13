@@ -5,7 +5,7 @@
 body {
     .lib-background-gradient(
         #004b6e,
-        #00628e,
+        @main-theme-color,
         vertical,
         true
     );
@@ -324,8 +324,8 @@ body {
 
 .page-footer {
     background: #0f769d; /* Old browsers */
-    background: linear-gradient(to bottom,  #0f769d 0%,#00628e 23%,#00628e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f769d', endColorstr='#00628e',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(to bottom,  #0f769d 0%,@main-theme-color 23%,@main-theme-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f769d', endColorstr='@main-theme-color',GradientType=0 ); /* IE6-9 */
     padding-bottom: 5px;
     .informational {
         clear: both;
@@ -392,15 +392,28 @@ body {
             }
         }
     }
-    .footer.content ul {
-        padding-right: 0;
-    }
-
-    .switcher-store {
-        text-align: center;
-        color: @color-white;
-        padding-top: 5px;
-        clear: both;
+    .footer.content {
+        ul {
+            padding-right: 0;
+        }
+        .switcher-store {
+            text-align: center;
+            color: @color-white;
+            padding-top: 5px;
+            clear: both;
+            background-color: @main-theme-color;
+            .options {
+                .switcher-trigger {
+                    border-top-color: rgba(255, 255, 255, 0.1);
+                }
+                ul.dropdown .switcher-option {
+                    border-top-color: rgba(255, 255, 255, 0.1);
+                    a {
+                        color: @color-white;
+                    }
+                }
+            }
+        }
     }
 }
 .copyright {
