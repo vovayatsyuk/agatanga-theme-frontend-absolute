@@ -1,8 +1,14 @@
-// alert(1);
 define([
     "jquery",
     'domReady!'
 ], function($) {
     $('.header.content > .header.links').clone().appendTo('#store\\.links');
-    // $('.header.content > .header.links').hide();
+
+    $('.header #search').on('focus', function(){
+        $(this).parents(".block-search").addClass("expanded");
+    });
+
+    $('.header #search').on('blur', function(){
+        $(this).parents(".block-search").removeClass("expanded");
+    });
 });

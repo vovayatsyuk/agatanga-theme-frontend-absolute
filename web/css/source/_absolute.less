@@ -117,6 +117,8 @@ body {
 //
 // Header Search
 // _____________________________________________
+.block-search { transition: width 0.2s; }
+.block-search.expanded { width: 350px;  transition: width 0.3s; }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .header .block-search {
@@ -129,7 +131,13 @@ body {
         }
     }
 }
-
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .header .block-search {
+        &.expanded {
+            width: auto;
+        }
+    }
+}
 //
 //  Navigation
 //  _____________________________________________
@@ -473,7 +481,7 @@ body {
 }
 
 //
-// Product Items
+// Homepage slider
 // _____________________________________________
 
 .homepage-slider {
@@ -481,3 +489,6 @@ body {
 }
 
 // #narrow-by-list div::last
+
+.toolbar .pages a.page,
+.toolbar .pages strong { padding: 0 10px; }
