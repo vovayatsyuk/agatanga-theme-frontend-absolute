@@ -16,7 +16,7 @@ body {
 }
 
 a,
-a:hover { transition: all 0.3s; }
+a:hover { transition: all @transition-time__m; }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-wrapper {
@@ -123,7 +123,7 @@ a:hover { transition: all 0.3s; }
 // Header Search
 // _____________________________________________
 .block-search { transition: width 0.2s; }
-.block-search.expanded { width: 350px;  transition: width 0.3s; }
+.block-search.expanded { width: 350px;  transition: width @transition-time__m; }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .header .block-search {
