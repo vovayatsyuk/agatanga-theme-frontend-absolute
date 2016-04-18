@@ -14,11 +14,16 @@ body {
     max-height: 50px;
     maxwidth: 50px;
 }
+
+a,
+a:hover { transition: all 0.3s; }
+
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-wrapper {
         margin: 0 5px;
     }
 }
+
 
 //
 //  Header
@@ -478,6 +483,13 @@ body {
             color: @color-gray40;
         }
     }
+}
+
+.page-title .base { color: @headings__color; }
+
+// Button text shadow
+.action.primary span {
+     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 }
 
 //
