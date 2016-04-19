@@ -11,4 +11,6 @@ define([
     $('.header #search').on('blur', function(){
         $(this).parents(".block-search").removeClass("expanded");
     });
+
+    $('.sidebar .block-title.no-display').parents('.block').hide();
 });

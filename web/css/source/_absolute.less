@@ -15,8 +15,17 @@ body {
     maxwidth: 50px;
 }
 
+//
+//  Common Elements styles
+//  _____________________________________________
+textarea,
+input.input-text,
 a,
-a:hover { transition: all @transition-time__m; }
+a:hover { transition: all @transition-time__m; border-color: @color-white-dark-smoke; }
+.input-text:focus { border-color: @color-white }
+
+
+
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-wrapper {
@@ -74,6 +83,9 @@ a:hover { transition: all @transition-time__m; }
                 background: rgba(255, 255, 255, 0.15);
             }
         }
+    }
+    .customer-welcome .action.switch {
+        color: @color-gray20;
     }
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
@@ -183,6 +195,7 @@ a:hover { transition: all @transition-time__m; }
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05739a', endColorstr='#003d6c',GradientType=0 ); /* IE6-9 */
         border-radius: 6px;
         padding: 0;
+        box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
     }
 }
 .page-main {
@@ -485,6 +498,12 @@ a:hover { transition: all @transition-time__m; }
     }
 }
 
+.swatch-option.image:hover:not(.disabled),
+.swatch-option.color:hover:not(.disabled),
+.swatch-option.selected { outline: 2px solid @headings__color; }
+
+.fotorama__thumb-border { border-color: @headings__color; }
+
 .page-title .base { color: @headings__color; }
 
 // Button text shadow
@@ -504,3 +523,10 @@ a:hover { transition: all @transition-time__m; }
 
 .toolbar .pages a.page,
 .toolbar .pages strong { padding: 0 10px; }
+
+//
+// Cart page
+// _____________________________________________
+
+.review-form .action.submit.primary,
+.actions-toolbar .action.primary span { text-shadow: 0px 0px 0 rgba(0, 0, 0, 0) }
