@@ -9,5 +9,15 @@
     },
     "autoload": {
         "files": [ "registration.php" ]
+    },
+    "extra": {
+        "swissup": {
+            "links": {
+                "marketplace"   : "https://marketplace.magento.com/swissup-absolute-metapackage.html",
+                "store"         : "https://swissuplabs.com/",
+                "docs"          : "http://docs.swissuplabs.com/m2/themes/absolute/",
+                "changelog"     : "http://docs.swissuplabs.com/m2/themes/absolute/changelog/"
+            }
+        }
     }
 }
