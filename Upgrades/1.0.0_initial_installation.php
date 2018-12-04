@@ -175,7 +175,7 @@ HTML
                 'custom_layout_update_xml' => null,
                 'content' => <<<HTML
 <div class="homepage-slider" >
-    <div data-mage-init='{"slick": {"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "autoplay": true}}'>
+    <div data-mage-init='{"slick": {"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "autoplay": true, "rows": 0}}'>
         <div style="margin-right: 10px"><img src="{{view url='images/slider/slide1.jpg'}}" alt=""/></div>
         <div style="margin-right: 10px"><img src="{{view url='images/slider/slide2.jpg'}}" alt=""/></div>
         <div style="margin-right: 10px"><img src="{{view url='images/slider/slide3.jpg'}}" alt=""/></div>
