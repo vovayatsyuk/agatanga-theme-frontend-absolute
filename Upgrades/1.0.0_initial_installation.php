@@ -79,7 +79,7 @@ HTML
         <li>
             <h4>Customer information</h4>
             <ul>
-                <li><a href="{{store direct_url='contacts'}}">Contact Us</a></li>
+                <li><a href="{{store direct_url='contact'}}">Contact Us</a></li>
                 <li><a href="{{store direct_url='price-matching'}}">Price matching</a></li>
                 <li><a href="{{store direct_url='testimonials'}}">Testimonials</a></li>
             </ul>
