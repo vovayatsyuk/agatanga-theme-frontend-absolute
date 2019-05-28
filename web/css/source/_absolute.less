@@ -246,15 +246,31 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
             }
             &.parent {
                 > .level-top {
-                    padding: 0 25px 0 15px;
+                    padding-right: 25px;
                     > .ui-menu-icon {
                         right: 9px;
                     }
                 }
             }
-        }
-        .submenu li {
-            margin-bottom: 0;
+
+            .submenu {
+                border-color: #fff;
+                border-radius: 5px;
+                padding: 5px;
+
+                &.level0 {
+                    border-radius: 0 0 5px 5px;
+                }
+
+                li {
+                    margin-bottom: 0;
+                    position: relative;
+                }
+
+                a {
+                    border-radius: 5px;
+                }
+            }
         }
     }
     .navigation > ul {
@@ -266,6 +282,18 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
         box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
     }
 }
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .navigation .level0,
+    .navigation li.level0 {
+        &,
+        &:last-child {
+            border-top-color: #cecece;
+            border-bottom-color: #cecece;
+        }
+    }
+}
+
 .page-main {
     background: #fff;
     border-radius: 0 0 10px 10px;
