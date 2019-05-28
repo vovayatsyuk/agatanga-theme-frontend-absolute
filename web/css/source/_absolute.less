@@ -370,6 +370,10 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
     div.page-bottom,
     main.page-main { border-radius: 0 0 0px 0px; }
     #layered-filter-block { padding: 0; border: 0px solid @color-white; }
+
+    .filter.active .filter-subtitle {
+        background: #fff;
+    }
 }
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .home-callouts  {
