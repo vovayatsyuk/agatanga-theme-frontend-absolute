@@ -155,7 +155,7 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
             padding: 5px;
             box-sizing: border-box;
             background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            .lib-css(box-shadow, @header-search__box-shadow);
             .lib-css(border-radius, @header-search__border-radius);
             ul:not(:empty) {
                 border-color: #fff;
@@ -175,7 +175,7 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
                 .lib-css(border-radius, @header-search__border-radius);
                 border-color: #fff;
                 margin-top: 1px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.15);
+                .lib-css(box-shadow, @header-search__box-shadow);
                 .select2-search__field {
                     .lib-css(border-radius, @header-search__border-radius);
                 }
@@ -190,7 +190,7 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
             margin-top: 1px;
             .lib-css(border-radius, @header-search__border-radius);
             border-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            .lib-css(box-shadow, @header-search__box-shadow);
         }
     }
 }
