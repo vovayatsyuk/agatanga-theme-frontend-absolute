@@ -195,6 +195,14 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
             .ui-state-active {
                 color: @navigation-desktop-level0-item__active__color;
             }
+            &.parent {
+                > .level-top {
+                    padding: 0 25px 0 15px;
+                    > .ui-menu-icon {
+                        right: 9px;
+                    }
+                }
+            }
         }
         .submenu li {
             margin-bottom: 0;
