@@ -73,7 +73,7 @@ HTML
             <ul>
                 <li><a href="{{store direct_url='about'}}">About Us</a></li>
                 <li><a href="{{store direct_url='our-company'}}">Our company</a></li>
-                <li><a href="{{store direct_url='catalog/seo_sitemap/category'}}">Sitemap</a></li>
+                <li><a href="{{store direct_url='sitemap'}}">Sitemap</a></li>
             </ul>
         </li>
         <li>
