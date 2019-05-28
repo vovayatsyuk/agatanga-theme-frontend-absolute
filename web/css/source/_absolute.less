@@ -41,6 +41,19 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
     }
 }
 
+& when (@media-common = true) {
+    .page-header ul.header.links,
+    .page-header .switcher .options ul.dropdown,
+    .page-footer .switcher .options ul.dropdown {
+        padding: 6px;
+        border-radius: 2px;
+        border-color: #fff;
+        li {
+            transition: 200ms background-color linear;
+        }
+    }
+}
+
 //
 //  Header
 //  _____________________________________________
