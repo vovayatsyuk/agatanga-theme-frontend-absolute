@@ -614,6 +614,14 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
         }
     }
 }
+.product-item-actions {
+    .actions-primary {
+        vertical-align: middle;
+        + .actions-secondary {
+            margin-left: 7px;
+        }
+    }
+}
 
 .swatch-option.image:hover:not(.disabled),
 .swatch-option.color:hover:not(.disabled),
