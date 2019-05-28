@@ -52,7 +52,6 @@
             <block class="Magento\Reports\Block\Product\Viewed" name="recently.viewed" as="recently_viewed" template="widget/viewed/column/viewed_names_list.phtml"/>
         </referenceContainer>
         <move element="header.links" destination="header-wrapper" />
-        <move element="minicart" destination="header.panel" after="store_language" />
         <move element="store_switcher" destination="footer" after="-" />
     </body>
 </page>
