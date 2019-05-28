@@ -143,8 +143,41 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
         right: 15px;
         bottom: -45px;
         .input-text {
-            border-radius: 10px;
+            .lib-css(border-radius, @header-search__border-radius);
             border-width: 0px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    // Ajaxsearch integration
+    .block-search.block-swissup-ajaxsearch .field.search {
+        .swissup-ajaxsearch-filter-category-wrapper {
+            .select2-container--default .select2-selection--single {
+                border-color: #fff;
+                .lib-css(border-radius, @header-search__border-radius 0 0 @header-search__border-radius);
+            }
+            .select2-dropdown {
+                .lib-css(border-radius, @header-search__border-radius);
+                border-color: #fff;
+                margin-top: 1px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.15);
+                .select2-search__field {
+                    .lib-css(border-radius, @header-search__border-radius);
+                }
+            }
+        }
+        .swissup-ajaxsearch-filter-category-wrapper + .origin {
+            .input-text {
+                .lib-css(border-radius, 0 @header-search__border-radius @header-search__border-radius 0);
+            }
+        }
+        .block-swissup-ajaxsearch-results {
+            margin-top: 1px;
+            .lib-css(border-radius, @header-search__border-radius);
+            border-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
         }
     }
 }
