@@ -98,11 +98,6 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
         color: @color-gray20;
     }
 }
-.page-header {
-    > .header:first-child {
-        margin-top: 20px;
-    }
-}
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     header.page-header {
         border-bottom: 0px solid transparent;
@@ -155,6 +150,12 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
 .block-search.expanded { width: 350px;  transition: width @transition-time__m; }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-header {
+        > .header:first-child {
+            margin-top: 20px;
+        }
+    }
+
     .header .block-search {
         position: absolute;
         right: 15px;
@@ -646,15 +647,6 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
 
 .review-form .action.submit.primary,
 .actions-toolbar .action.primary span { text-shadow: 0px 0px 0 rgba(0, 0, 0, 0) }
-
-//
-// Checkout
-// ______________________________________________
-.checkout-index-index {
-    .logo {
-        margin-bottom: 0;
-    }
-}
 
 //
 // Modal popup
