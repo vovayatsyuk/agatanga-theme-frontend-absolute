@@ -149,6 +149,19 @@ a:hover { transition: all @transition-time__m; border-color: @color-white-dark-s
                 box-shadow: none;
             }
         }
+
+        .search-autocomplete {
+            margin-top: 1px;
+            padding: 5px;
+            box-sizing: border-box;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            .lib-css(border-radius, @header-search__border-radius);
+            ul:not(:empty) {
+                border-color: #fff;
+                .lib-css(border-radius, @header-search__border-radius);
+            }
+        }
     }
 
     // Ajaxsearch integration
