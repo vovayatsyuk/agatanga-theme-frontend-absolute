@@ -32,8 +32,9 @@ body {
 textarea,
 input.input-text,
 a,
-a:hover { transition: all @transition-time__m; border-color: @color-white-dark-smoke; }
-.input-text:focus { border-color: @color-white }
+a:hover {
+    transition: all @transition-time__m;
+}
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-wrapper {
