@@ -162,6 +162,7 @@ a:hover {
         bottom: -45px;
         .input-text {
             .lib-css(border-radius, @header-search__border-radius);
+            .lib-css(height, @header-search__height);
             border-width: 0px;
             &:focus {
                 box-shadow: none;
@@ -188,6 +189,13 @@ a:hover {
             .select2-container--default .select2-selection--single {
                 border-color: #fff;
                 .lib-css(border-radius, @header-search__border-radius 0 0 @header-search__border-radius);
+                .lib-css(height, @header-search__height);
+                .select2-selection__arrow {
+                    .lib-css(height, @header-search__height);
+                }
+                .select2-selection__rendered {
+                    .lib-css(line-height, @header-search__height);
+                }
             }
             .select2-dropdown {
                 .lib-css(border-radius, @header-search__border-radius);
