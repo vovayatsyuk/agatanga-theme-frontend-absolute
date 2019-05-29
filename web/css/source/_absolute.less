@@ -615,14 +615,16 @@ a:hover {
 //
 // Product Items
 // _____________________________________________
-
+.sidebar .action.tocart {
+    .lib-css(border-radius, @button__border-radius);
+}
 .product-item {
     .product-item-name a {
         color: @color-sky-blue1;
         font-weight: @font-weight__heavier;
     }
     .tocart {
-        border-radius: @button__border-radius;
+        .lib-css(border-radius, @button__border-radius);
     }
     .price-box{
         span.price {
