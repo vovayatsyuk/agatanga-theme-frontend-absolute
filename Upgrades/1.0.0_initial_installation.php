@@ -176,10 +176,10 @@ HTML
                 'custom_layout_update_xml' => null,
                 'content' => <<<HTML
 <div class="homepage-slider" >
-    <div data-mage-init='{"slick": {"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "autoplay": true, "rows": 0}}'>
-        <div style="margin-right: 10px"><img src="{{view url='images/slider/slide1.jpg'}}" alt=""/></div>
-        <div style="margin-right: 10px"><img src="{{view url='images/slider/slide2.jpg'}}" alt=""/></div>
-        <div style="margin-right: 10px"><img src="{{view url='images/slider/slide3.jpg'}}" alt=""/></div>
+    <div class="slick-slider" data-mage-init='{"slick": {"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "autoplay": true, "rows": 0}}'>
+        <div><img src="{{view url='images/slider/slide1.jpg'}}" alt=""/></div>
+        <div><img src="{{view url='images/slider/slide2.jpg'}}" alt=""/></div>
+        <div><img src="{{view url='images/slider/slide3.jpg'}}" alt=""/></div>
     </div>
 </div>
 {{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="new_products" products_count="8" template="product/widget/new/content/new_grid.phtml"}}
