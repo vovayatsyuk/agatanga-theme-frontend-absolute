@@ -174,43 +174,6 @@ a:hover {
             }
         }
     }
-
-    // Ajaxsearch integration
-    .block-search.block-swissup-ajaxsearch .field.search {
-        .swissup-ajaxsearch-filter-category-wrapper {
-            .select2-container--default .select2-selection--single {
-                border-color: #fff;
-                .lib-css(border-radius, @header-search__border-radius 0 0 @header-search__border-radius);
-                .lib-css(height, @header-search__height);
-                .select2-selection__arrow {
-                    .lib-css(height, @header-search__height);
-                }
-                .select2-selection__rendered {
-                    .lib-css(line-height, @header-search__height);
-                }
-            }
-            .select2-dropdown {
-                .lib-css(border-radius, @header-search__border-radius);
-                border-color: #fff;
-                margin-top: 1px;
-                .lib-css(box-shadow, @header-search__box-shadow);
-                .select2-search__field {
-                    .lib-css(border-radius, @header-search__border-radius);
-                }
-            }
-        }
-        .swissup-ajaxsearch-filter-category-wrapper + .origin {
-            .input-text {
-                .lib-css(border-radius, 0 @header-search__border-radius @header-search__border-radius 0);
-            }
-        }
-        .block-swissup-ajaxsearch-results {
-            margin-top: 1px;
-            .lib-css(border-radius, @header-search__border-radius);
-            border-color: #fff;
-            .lib-css(box-shadow, @header-search__box-shadow);
-        }
-    }
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .header .block-search {
