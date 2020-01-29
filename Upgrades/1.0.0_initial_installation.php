@@ -153,24 +153,7 @@ HTML
                 'page_layout' => '2columns-right',
                 'content_heading' => '',
                 'is_active' => 1,
-                'layout_update_xml' => <<<HTML
-<referenceContainer name="sidebar.additional">
-    <block class="Magento\Cms\Block\Block" name="homepage_callout" before="-">
-        <arguments>
-            <argument name="block_id" xsi:type="string">homepage_callout</argument>
-        </arguments>
-    </block>
-    <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.right" as="subscribe_right" template="subscribe_right.phtml"/>
-</referenceContainer>
-<referenceContainer name="page.bottom">
-    <block class="Magento\Cms\Block\Block" name="featured">
-        <arguments>
-            <argument name="block_id" xsi:type="string">featured</argument>
-        </arguments>
-    </block>
-</referenceContainer>
-HTML
-,
+                'layout_update_xml' => '',
                 'custom_theme' => null,
                 'custom_root_template' => null,
                 'custom_layout_update_xml' => null,
