@@ -1,19 +1,6 @@
 //
-//  Screen sizes
-//  _____________________________________________
-
-// Mobile/Tab Width Exception (0px - 768px)
-// .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {}
-
-// Desktop Width Exception ( 768px - INF )
-// .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {}
-
-
-
-//
 //  Body
 //  _____________________________________________
-
 body {
     .lib-background-gradient(
         #004b6e,
@@ -306,35 +293,27 @@ a:hover {
         }
         .home-callouts {
             .callout {
-                display: block;
                 min-height: 113px;
-                width: 234px;
-                border: 0px solid transparent;
-                // border-radius: 6px;
+                border: 0;
                 margin-bottom: 10px;
-                box-shadow: @block_box-shadow;
             }
             .callout1 {
                 background: #6194ae;
                 background: linear-gradient(to bottom,  #6194ae 0%,#005e89 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6194ae', endColorstr='#005e89',GradientType=0 );
             }
             .callout2 {
                 background: #8ebb82;
                 background: linear-gradient(to bottom,  #8ebb82 0%,#499e37 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ebb82', endColorstr='#499e37',GradientType=0 );
             }
         }
         .block.newsletter {
             width: auto;
-            border: 0px solid transparent;
-            box-shadow: @block_box-shadow;
+            border: 0;
             border-radius: 0;
 
             color: @color-white;
             background: #6194ae;
             background: linear-gradient(to bottom,  #6194ae 0%,#005e89 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6194ae', endColorstr='#005e89',GradientType=0 );
 
             .title {
                 display: block;
@@ -351,13 +330,15 @@ a:hover {
                     content: "\f003";
                 }
             }
+            div.mage-error[generated] {
+                color: #fddad9;
+            }
             #newsletter {
                 border-radius: @button__border-radius 0 0 @button__border-radius;
                 border: 0 solid transparent;
             }
         }
     }
-
 }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
