@@ -16,14 +16,6 @@
         "files": [ "registration.php" ]
     },
     "extra": {
-        "swissup": {
-            "links": {
-                "marketplace"   : "https://marketplace.magento.com/swissup-absolute-metapackage.html",
-                "store"         : "https://swissuplabs.com/free-magento-2-theme-absolute.html",
-                "docs"          : "http://docs.swissuplabs.com/m2/themes/absolute/",
-                "changelog"     : "http://docs.swissuplabs.com/m2/themes/absolute/changelog/"
-            }
-        },
         "marketplace": {
             "gallery": [
                 "https://docs.swissuplabs.com/images/marketplace/theme-frontend-absolute.png"
