@@ -1,8 +1,21 @@
 <div class="homepage-slider" >
-    <div class="slick-slider" data-mage-init='{"slick": {"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "autoplay": true, "rows": 0}}'>
-        <div><img src="{{view url='images/slider/slide1.jpg'}}" alt=""/></div>
-        <div><img src="{{view url='images/slider/slide2.jpg'}}" alt=""/></div>
-        <div><img src="{{view url='images/slider/slide3.jpg'}}" alt=""/></div>
+    <div class="swiper-container" data-mage-init='{"Swissup_Swiper/js/swiper" : {"lazy": true, "slidesPerView": 1, "autoplay": {"delay": 2500, "disableOnInteraction": false}, "navigation": {"nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev"}}}'>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-lazy-preloader"></div>
+                <img class="swiper-lazy" data-src="{{view url='images/slider/slide1.jpg'}}" alt="" width="932" height="315"/>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-lazy-preloader"></div>
+                <img class="swiper-lazy" data-src="{{view url='images/slider/slide2.jpg'}}" alt="" width="932" height="315"/>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-lazy-preloader"></div>
+                <img class="swiper-lazy" data-src="{{view url='images/slider/slide3.jpg'}}" alt="" width="932" height="315"/>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 </div>
 {{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="new_products" products_count="8" template="product/widget/new/content/new_grid.phtml"}}
