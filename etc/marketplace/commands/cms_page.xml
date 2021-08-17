@@ -5,7 +5,7 @@
             <item>
                 <item name="title">Absolute Theme</item>
                 <item name="identifier">home</item>
-                <item name="page_layout">2columns-right</item>
+                <item name="page_layout">1column</item>
                 <item name="content" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
                     <param name="path" type="path">content/cms_page/home.html</param>
                 </item>

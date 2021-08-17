@@ -10,13 +10,6 @@
                 </item>
             </item>
             <item>
-                <item name="title">homepage_callout</item>
-                <item name="identifier">homepage_callout</item>
-                <item name="content" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
-                    <param name="path" type="path">content/cms_block/home_callout.html</param>
-                </item>
-            </item>
-            <item>
                 <item name="title">footer_contacts</item>
                 <item name="identifier">footer_contacts</item>
                 <item name="content" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">

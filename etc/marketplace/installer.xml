@@ -19,5 +19,7 @@
         <include path="commands/cms_page.xml"/>
         <include path="commands/cms_block.xml"/>
         <include path="commands/product_attribute.xml"/>
+        <include path="commands/product.xml"/>
+        <include path="commands/resources.xml"/>
     </commands>
 </config>
