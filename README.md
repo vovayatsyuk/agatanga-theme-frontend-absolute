@@ -1,22 +1,18 @@
 # Absolute Theme
 
+Absolute theme - is simple and free Magento 2 theme with pagebuilder support.
+
 ## Installation
 
-### For clients
-
-There are several ways to install extension for clients:
-
- 1. If you've bought the product at Magento's Marketplace - use
-    [Marketplace installation instructions](https://docs.magento.com/marketplace/user_guide/buyers/install-extension.html)
- 2. Otherwise, you have two options:
-    - Install the sources directly from [our repository](https://docs.swissuplabs.com/m2/themes/absolute/installation/composer/) - **recommended**
-    - Download archive and use [manual installation](https://docs.swissuplabs.com/m2/themes/absolute/installation/manual/)
-
-### For developers
-
-Use this approach if you have access to our private repositories!
+Installation requires Marketplace module. It’s our module that provides easy to
+use installer.
 
 ```bash
-composer config repositories.swissup composer https://docs.swissuplabs.com/packages/
-composer require swissup/theme-frontend-absolute:dev-master --prefer-source
+composer require swissup/module-marketplace && bin/magento setup:upgrade
+bin/magento marketplace:package:require swissup/absolute-metapackage
+bin/magento marketplace:package:install swissup/absolute-metapackage
 ```
+
+That's all. Navigate to you store to check your new theme:
+
+![Homepage Screenshot](https://raw.githubusercontent.com/swissup/theme-frontend-absolute/master/media/preview.png)
